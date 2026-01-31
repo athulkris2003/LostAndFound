@@ -75,8 +75,12 @@ WSGI_APPLICATION = "lostandfound.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "lostandfoundDB",
+        "USER": "postgres",
+        "PASSWORD": "Athul@2003",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
